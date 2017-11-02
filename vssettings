@@ -1,0 +1,18 @@
+<UserSettings>
+  <ApplicationIdentity version="15.0"/>
+  <Category name="Environment_Group" RegisteredName="Environment_Group">
+    <Category name="Environment_KeyBindings" Category="{F09035F1-80D2-4312-8EC4-4D354A4BCB4C}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_KeyBindings" PackageName="Visual Studio Environment Package">
+      <Version>15.0.0.0</Version>
+      <KeyboardShortcuts>
+        <UserShortcuts>
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+P</Shortcut>
+          <Shortcut Command="Window.NextSplitPane" Scope="Global">Ctrl+F,J</Shortcut>
+          <Shortcut Command="Window.PreviousSplitPane" Scope="Global">Ctrl+F,K</Shortcut>
+          <Shortcut Command="TestExplorer.RunAllTests" Scope="Global">Ctrl+R,A</Shortcut>
+          <Shortcut Command="TestExplorer.RunAllTestsInContext" Scope="Global">Ctrl+R,F</Shortcut>
+          <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+R,L</Shortcut>
+        </UserShortcuts>
+      </KeyboardShortcuts>
+    </Category>
+  </Category>
+</UserSettings>
