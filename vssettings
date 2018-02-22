@@ -1,5 +1,50 @@
 <UserSettings>
   <ApplicationIdentity version="15.0"/>
+  <!--<ToolsOptions>
+    <ToolsOptionsCategory name="TextEditor" RegisteredName="TextEditor">
+      <ToolsOptionsSubCategory name="HTML" RegisteredName="HTML" PackageName="Text Management Package">
+        <PropertyValue name="InsertTabs">false</PropertyValue>
+        <PropertyValue name="IndentSize">2</PropertyValue>
+      </ToolsOptionsSubCategory>
+      <ToolsOptionsSubCategory name="JavaScript" RegisteredName="JavaScript" PackageName="Text Management Package">
+        <PropertyValue name="InsertTabs">false</PropertyValue>
+        <PropertyValue name="IndentSize">2</PropertyValue>
+      </ToolsOptionsSubCategory>
+    </ToolsOptionsCategory>
+  </ToolsOptions>-->
+  <Category name="Environment_Group" RegisteredName="Environment_Group">
+    <Category name="Environment_FontsAndColors" Category="{1EDA5DD4-927A-43a7-810E-7FD247D0DA1D}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_FontsAndColors" PackageName="Visual Studio Environment Package">
+      <PropertyValue name="Version">2</PropertyValue>
+      <FontsAndColors Version="2.0">
+        <Theme Id="{1DED0138-47CE-435E-84EF-9EC1F439B749}"/>
+        <Categories>
+          <Category GUID="{B36B0228-DBAD-4DB0-B9C7-2AD3E572010F}" FontName="Segoe UI" FontSize="8" CharSet="1" FontIsDefault="No">
+            <Items>
+              <Item Name="Odd Row Items" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+              <Item Name="Even Row Items" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+              <Item Name="Not Downloaded" Foreground="0x00999999" Background="0x00FFFFFF" BoldFont="No"/>
+              <Item Name="Target Only" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+              <Item Name="Source Only" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+              <Item Name="Identical content" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+              <Item Name="Different content" Foreground="0x000014E5" Background="0x00FFFFFF" BoldFont="No"/>
+            </Items>
+          </Category>
+          <Category GUID="{75A05685-00A8-4DED-BAE5-E7A50BFA929A}" FontName="Consolas" FontSize="8" CharSet="1" FontIsDefault="No">
+            <Items/>
+          </Category>
+          <Category GUID="{FF349800-EA43-46C1-8C98-878E78F46501}" FontName="Consolas" FontSize="8" CharSet="1" FontIsDefault="No">
+            <Items/>
+          </Category>
+          <Category GUID="{E0187991-B458-4F7E-8CA9-42C9A573B56C}" FontName="Consolas" FontSize="8" CharSet="1" FontIsDefault="No">
+            <Items/>
+          </Category>
+          <Category GUID="{58E96763-1D3B-4E05-B6BA-FF7115FD0B7B}" FontName="Consolas" FontSize="8" CharSet="1" FontIsDefault="No">
+            <Items/>
+          </Category>
+        </Categories>
+      </FontsAndColors>
+    </Category>
+  </Category>
   <Category name="Environment_Group" RegisteredName="Environment_Group">
     <Category name="Environment_KeyBindings" Category="{F09035F1-80D2-4312-8EC4-4D354A4BCB4C}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_KeyBindings" PackageName="Visual Studio Environment Package">
       <Version>15.0.0.0</Version>

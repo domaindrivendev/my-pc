@@ -10,36 +10,36 @@ function Set-ContentFromTemplate {
 
 $buildParameters = $args[0]
 
-echo "******************************"
-echo "Install packages"
-echo "******************************"
-echo ""
-cinst git
-cinst openssh
-cinst visualstudiocode --params '/NoDesktopIcon'
+function Install-Packages {
+  cinst git
+  cinst gitextensions
+  cinst openssh
+  cinst visualstudiocode --params '/NoDesktopIcon'
+  cinst bower
+}
 
-echo "******************************"
-echo "Configure Powershell"
-echo "******************************"
-echo ""
-mkdir ~/Documents/WindowsPowerShell/autoload -Force
-Copy-Item Microsoft.PowerShell_profile.ps1 ~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
+function Configure-Powershell {
+  mkdir ~/Documents/WindowsPowerShell/autoload -Force
+  Copy-Item Microsoft.PowerShell_profile.ps1 ~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
+}
 
-echo "******************************"
-echo "Configure git"
-echo "******************************"
-echo ""
-PowerShellGet\Install-Module posh-git -Scope CurrentUser -Confirm
-Update-Module posh-git
-Set-ContentFromTemplate -Path ~/.gitconfig -TemplatePath gitconfig -Parameters $buildParameters
+function Configure-Git {
+  PowerShellGet\Install-Module posh-git -Scope CurrentUser -Confirm
+  Update-Module posh-git
+  Set-ContentFromTemplate -Path ~/.gitconfig -TemplatePath gitconfig -Parameters $buildParameters
+}
 
-echo "******************************"
-echo "Configure Visual Studio"
-echo "******************************"
-echo ""
-Copy-Item vssettings ~/.vssettings
-Copy-Item vimrc ~/.vimrc
+function Configure-VisualStudio {
+  Copy-Item vssettings ~/.vssettings
+  Copy-Item vimrc ~/.vimrc
+}
 
-echo "******************************"
-echo "Done!"
-echo "******************************"
+@( "Install-Packages", "Configure-Powershell", "Configure-Git", "Configure-VisualStudio" ) | ForEach-Object {
+  echo ""
+  echo "***** $_ *****"
+  echo ""
+
+  # Invoke function and exit on error
+  &$_ 
+  if ($LastExitCode -ne 0) { Exit $LastExitCode }
+}

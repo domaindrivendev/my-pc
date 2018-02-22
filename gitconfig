@@ -1,5 +1,5 @@
 [core]
-autocrlf = false
+autocrlf = true
 
 [branch]
 autosetuprebase = always
