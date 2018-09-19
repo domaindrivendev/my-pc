@@ -15,7 +15,7 @@ function Install-Packages {
   cinst gitextensions
   cinst openssh
   cinst visualstudiocode --params '/NoDesktopIcon'
-  cinst bower
+  cinst nodejs
 }
 
 function Configure-Powershell {
@@ -29,12 +29,23 @@ function Configure-Git {
   Set-ContentFromTemplate -Path ~/.gitconfig -TemplatePath gitconfig -Parameters $buildParameters
 }
 
+function Configure-VSCode {
+  code --install-extension vscodevim.vim
+  code --install-extension ms-vscode.csharp
+  code --install-extension formulahendry.dotnet-test-explorer
+  code --install-extension ms-mssql.mssql
+  code --install-extension ms-vscode.PowerShell
+
+  Copy-Item keybindings.json ~\AppData\Roaming\Code\User\keybindings.json
+  Copy-Item settings.json ~\AppData\Roaming\Code\User\settings.json
+}
+
 function Configure-VisualStudio {
   Copy-Item vssettings ~/.vssettings
   Copy-Item vimrc ~/.vimrc
 }
 
-@( "Install-Packages", "Configure-Powershell", "Configure-Git", "Configure-VisualStudio" ) | ForEach-Object {
+@( "Install-Packages", "Configure-Powershell", "Configure-Git", "Configure-VSCode", "Configure-VisualStudio" ) | ForEach-Object {
   echo ""
   echo "***** $_ *****"
   echo ""

@@ -1,0 +1,14 @@
+{
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.shell.windows": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "vim.easymotion": true,
+  "vim.leader": ",",
+  "vim.insertModeKeyBindings": [
+    {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+    }
+  ],
+  "dotnet-test-explorer.testProjectPath": "**/*Test*csproj",
+  "dotnet-test-explorer.autoExpandTree": true
+}
