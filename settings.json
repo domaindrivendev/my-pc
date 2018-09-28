@@ -1,6 +1,5 @@
 {
   "editor.lineNumbers": "relative",
-  "terminal.integrated.shell.windows": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
   "vim.easymotion": true,
   "vim.leader": ",",
   "vim.insertModeKeyBindings": [

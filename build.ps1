@@ -11,11 +11,14 @@ function Set-ContentFromTemplate {
 $buildParameters = $args[0]
 
 function Install-Packages {
-  cinst git
-  cinst gitextensions
-  cinst openssh
-  cinst visualstudiocode --params '/NoDesktopIcon'
-  cinst nodejs
+  cinst git -y
+  cinst gitextensions -y
+  cinst openssh -y
+  cinst visualstudiocode --params '/NoDesktopIcon' -y
+  cinst nodejs -y
+  cinst mssql.tools -y
+  cinst nuget.commandline -y
+  cinst arr_2016 -y
 }
 
 function Configure-Powershell {

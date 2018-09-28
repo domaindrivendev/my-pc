@@ -51,11 +51,12 @@
       <KeyboardShortcuts>
         <UserShortcuts>
           <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+P</Shortcut>
-          <Shortcut Command="Window.NextSplitPane" Scope="Global">Ctrl+F,J</Shortcut>
+          <Shortcut Command="View.PackageManagerConsole" Scope="Global">Ctrl+F,P</Shortcut>
+          <!--<Shortcut Command="Window.NextSplitPane" Scope="Global">Ctrl+F,J</Shortcut>
           <Shortcut Command="Window.PreviousSplitPane" Scope="Global">Ctrl+F,K</Shortcut>
           <Shortcut Command="TestExplorer.RunAllTests" Scope="Global">Ctrl+R,A</Shortcut>
           <Shortcut Command="TestExplorer.RunAllTestsInContext" Scope="Global">Ctrl+R,F</Shortcut>
-          <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+R,L</Shortcut>
+          <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+R,L</Shortcut>-->
         </UserShortcuts>
       </KeyboardShortcuts>
     </Category>
