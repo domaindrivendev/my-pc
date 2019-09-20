@@ -1,17 +1,5 @@
 <UserSettings>
   <ApplicationIdentity version="15.0"/>
-  <!--<ToolsOptions>
-    <ToolsOptionsCategory name="TextEditor" RegisteredName="TextEditor">
-      <ToolsOptionsSubCategory name="HTML" RegisteredName="HTML" PackageName="Text Management Package">
-        <PropertyValue name="InsertTabs">false</PropertyValue>
-        <PropertyValue name="IndentSize">2</PropertyValue>
-      </ToolsOptionsSubCategory>
-      <ToolsOptionsSubCategory name="JavaScript" RegisteredName="JavaScript" PackageName="Text Management Package">
-        <PropertyValue name="InsertTabs">false</PropertyValue>
-        <PropertyValue name="IndentSize">2</PropertyValue>
-      </ToolsOptionsSubCategory>
-    </ToolsOptionsCategory>
-  </ToolsOptions>-->
   <Category name="Environment_Group" RegisteredName="Environment_Group">
     <Category name="Environment_FontsAndColors" Category="{1EDA5DD4-927A-43a7-810E-7FD247D0DA1D}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_FontsAndColors" PackageName="Visual Studio Environment Package">
       <PropertyValue name="Version">2</PropertyValue>
@@ -51,12 +39,10 @@
       <KeyboardShortcuts>
         <UserShortcuts>
           <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+P</Shortcut>
-          <Shortcut Command="View.PackageManagerConsole" Scope="Global">Ctrl+F,P</Shortcut>
-          <!--<Shortcut Command="Window.NextSplitPane" Scope="Global">Ctrl+F,J</Shortcut>
-          <Shortcut Command="Window.PreviousSplitPane" Scope="Global">Ctrl+F,K</Shortcut>
-          <Shortcut Command="TestExplorer.RunAllTests" Scope="Global">Ctrl+R,A</Shortcut>
-          <Shortcut Command="TestExplorer.RunAllTestsInContext" Scope="Global">Ctrl+R,F</Shortcut>
-          <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+R,L</Shortcut>-->
+          <Shortcut Command="Refactor.Rename" Scope="Global">Ctrl+R,R</Shortcut>
+          <Shortcut Command="TestExplorer.RunAllTests" Scope="Global">Ctrl+T,A</Shortcut>
+          <Shortcut Command="TestExplorer.RunAllTestsInContext" Scope="Global">Ctrl+T,F</Shortcut>
+          <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+T,L</Shortcut>
         </UserShortcuts>
       </KeyboardShortcuts>
     </Category>

@@ -1,4 +1,6 @@
 {
+  "dotnet-test-explorer.testProjectPath": "**/*Test*csproj",
+  "dotnet-test-explorer.autoExpandTree": true,
   "editor.lineNumbers": "relative",
   "vim.easymotion": true,
   "vim.leader": ",",
@@ -8,6 +10,6 @@
         "after": ["<Esc>"]
     }
   ],
-  "dotnet-test-explorer.testProjectPath": "**/*Test*csproj",
-  "dotnet-test-explorer.autoExpandTree": true
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false
 }

@@ -19,6 +19,11 @@ function Install-Packages {
   cinst mssql.tools -y
   cinst nuget.commandline -y
   cinst arr_2016 -y
+  cinst awscli -y
+  cinst terraform -y
+  cinst vault -y
+  cinst python -y
+  cinst filezilla -y
 }
 
 function Configure-Powershell {
@@ -38,6 +43,9 @@ function Configure-VSCode {
   code --install-extension formulahendry.dotnet-test-explorer
   code --install-extension ms-mssql.mssql
   code --install-extension ms-vscode.PowerShell
+  code --install-extension mauve.terraform
+  code --install-extension peterjausovec.vscode-docker
+  code --install-extension rebornix.ruby
 
   Copy-Item keybindings.json ~\AppData\Roaming\Code\User\keybindings.json
   Copy-Item settings.json ~\AppData\Roaming\Code\User\settings.json
@@ -48,7 +56,13 @@ function Configure-VisualStudio {
   Copy-Item vimrc ~/.vimrc
 }
 
-@( "Install-Packages", "Configure-Powershell", "Configure-Git", "Configure-VSCode", "Configure-VisualStudio" ) | ForEach-Object {
+@(
+  "Install-Packages",
+  "Configure-Powershell",
+  "Configure-Git",
+  "Configure-VSCode",
+  "Configure-VisualStudio"
+) | ForEach-Object {
   echo ""
   echo "***** $_ *****"
   echo ""
