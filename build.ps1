@@ -24,6 +24,7 @@ function Install-Packages {
   cinst vault -y
   cinst python -y
   cinst filezilla -y
+  cinst jq -y
 }
 
 function Configure-Powershell {
