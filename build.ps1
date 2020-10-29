@@ -16,15 +16,15 @@ function Install-Packages {
   cinst openssh -y
   cinst visualstudiocode --params '/NoDesktopIcon' -y
   cinst nodejs -y
-  cinst mssql.tools -y
   cinst nuget.commandline -y
-  cinst arr_2016 -y
   cinst awscli -y
   cinst terraform -y
   cinst vault -y
   cinst python -y
   cinst filezilla -y
   cinst jq -y
+  cinst sql-server-management-studio -y
+  cinst visualstudio2019professional -y --package-parameters '--allWorkloads --includeRecommended --passive'
 }
 
 function Configure-Powershell {
@@ -40,20 +40,20 @@ function Configure-Git {
 
 function Configure-VSCode {
   code --install-extension vscodevim.vim
-  code --install-extension ms-vscode.csharp
+  code --install-extension ms-dotnettools.csharp
   code --install-extension formulahendry.dotnet-test-explorer
   code --install-extension ms-mssql.mssql
   code --install-extension ms-vscode.PowerShell
-  code --install-extension mauve.terraform
-  code --install-extension peterjausovec.vscode-docker
+  code --install-extension hashicorp.terraform
   code --install-extension rebornix.ruby
+  code --install-extension mshdinsight.azure-hdinsight 
 
   Copy-Item keybindings.json ~\AppData\Roaming\Code\User\keybindings.json
   Copy-Item settings.json ~\AppData\Roaming\Code\User\settings.json
 }
 
 function Configure-VisualStudio {
-  Copy-Item vssettings ~/.vssettings
+  Copy-Item my.vssettings ~/my.vssettings
   Copy-Item vimrc ~/.vimrc
 }
 
