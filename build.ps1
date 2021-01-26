@@ -21,10 +21,11 @@ function Install-Packages {
   cinst terraform -y
   cinst vault -y
   cinst python -y
-  cinst filezilla -y
   cinst jq -y
   cinst sql-server-management-studio -y
   cinst visualstudio2019professional -y --package-parameters '--allWorkloads --includeRecommended --passive'
+  cinst jdk8 -y
+  cinst sbt
 }
 
 function Configure-Powershell {
@@ -47,6 +48,7 @@ function Configure-VSCode {
   code --install-extension hashicorp.terraform
   code --install-extension rebornix.ruby
   code --install-extension mshdinsight.azure-hdinsight 
+  code --install-extension scalameta.metals
 
   Copy-Item keybindings.json ~\AppData\Roaming\Code\User\keybindings.json
   Copy-Item settings.json ~\AppData\Roaming\Code\User\settings.json
