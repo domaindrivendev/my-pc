@@ -49,6 +49,7 @@ function Configure-VSCode {
   code --install-extension rebornix.ruby
   code --install-extension mshdinsight.azure-hdinsight 
   code --install-extension scalameta.metals
+  code --install-extension lextudio.restructuredtext
 
   Copy-Item keybindings.json ~\AppData\Roaming\Code\User\keybindings.json
   Copy-Item settings.json ~\AppData\Roaming\Code\User\settings.json
